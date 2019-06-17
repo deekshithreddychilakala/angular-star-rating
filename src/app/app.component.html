@@ -1,0 +1,9 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+ <div *ngFor="let a of arr;let i=index" (click)="star(i)">
+      <app-demo [rating]="a" [inputName]="i"></app-demo>
+</div>
+ <app-demo [rating]="4"></app-demo>
